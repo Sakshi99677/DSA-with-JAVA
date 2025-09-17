@@ -1,0 +1,104 @@
+-----------------Day 1--------------------------
+## why to use trees ##
+1. you can do operations in O(logN) times.
+2. for simplicity 
+3. all in the left are smaller then root .... all in the right hand side are bigger then root
+4. cost efficient 
+
+## where binary trees are used is used ##
+1. file system
+2. databases
+3. network routing
+4. algorithm networking
+5. maths
+6. machine learning 
+7. compression of files
+8. data structures - graphs, 
+
+
+1. unbalaced binary tree
+O                            10
+ \                          /  \
+  O                        5    20
+   \                        \   /
+    O                        7 18
+
+we can balance these unbalace tree .... 
+
+2. self balance binary tree(future concept)...
+
+
+---------------------------------------------------------------------------------------------------
+## binary tree implimentation ##
+Node:
+  int value
+  Node right
+  Node left
+---------------------------------------------------------------------------------------------------------------
+
+## Properties ##
+1. size = total number of nodes
+2. child and parent 
+         5
+       /   \
+      6     8
+    parent : 5
+    child : 6,8
+    sibling : 8,6 (having same parent)
+3. edge
+5. height (max number of edges)(max distance from leaf nodes).
+6. leaf nodes : the last bottom nodes...
+7. level ( differenc blw root and that node).
+
+
+--------------------------------------------------DAY 2-------------------------------------------------------------------------------
+8 is the eaccencr of 4.... if there is a path from 8 to 4
+
+## types of binary tree ##
+1. Complete binary tree
+  -> All the levels are full except the last operation
+  -> last level should be full from left to right
+
+2. Full binary tree/scrict binary tree
+  -> each node has either 0 or 2 children (no single child)
+
+3. Perfect binary tree
+  -> all levels are filled.................
+
+4. height balanced binary tree
+  -> average height O(logN)
+
+5. skewed binary tree
+  -> every node has only one child
+
+6. Ordered Binary tree
+  -> Every node has some property ... example BST
+
+## Properties ##
+---that will help in some questions
+
+1. to total number of nodes in |perfect binary tree| if height is h : 2^(h+1)-1
+2. total no of leaf nodes in |perfect binary tree| if height is h : 2^(h)
+3. n is number of leafs in perfect binary tree then no. of levels at lest .... log(n+1)
+4. strict binary tree - n are the total number of leaf nodes.... then total internal node : n-1
+5. number of leaf nodes in strict binary tree = internal nodes(with 2 children)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## implimentation ##
+1. linked representation
+2. sequential - using array..... not using this always.....used in heap..........
+
+
+-------------------------------------------Day 3------------------------------------------------------
+time complexity : O(log(n))
+
+Implementation :
+---> insert(                      15
+  insert left;                   /
+  insert right                  8
+)
+
+use stack and recursion.... check the code of BinaryTree.java.
+continuoue from 1:27:57
