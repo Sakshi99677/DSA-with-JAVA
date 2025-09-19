@@ -44,5 +44,36 @@ class BST{
         Display(node.right, "right child of " +node.getValue() +" : ");
     }
 
+    private void insert(int value){
+
+    }
+
+    private Node insert(int value, Node node){
+        if(node==null){
+            node = new Node(value);
+            return node;
+        }
+        if(value < node.value){
+            node.left = insert(value, node.left);
+        }
+        if(value > node.value){
+            node.right = insert(value, node.right);
+        }
+
+        node.height = 1 + Math.max(height(node.left), height(node.right));
+        return node;
+    }
+
+    public boolean balnaced(){
+        return balanced(root);
+    }
+
+    private boolean balanced(Node node){
+        if(node == null){
+            return true;
+        }
+        return Math.abs(height(node.left)-height(node.right))<=1 && balanced(node.left) && balanced(node.right);
+    }
+
     
 }
