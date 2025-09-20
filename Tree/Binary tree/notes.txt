@@ -123,4 +123,23 @@ Node{
   int height
 }
 
-continuoue... from... 2:15:04.....
+------------------------------------------Day 4---------------------------------------------------------------------------------------------------------------
+## Traversal Method ##
+
+1. Pre - Order
+Node---> left-----> right
+- used for evaluating math exprssion or making a copy...
+- also in serialization
+
+2. In - Order
+left-----> Node -----> right
+15-20-13-10-12
+- in BST visit node in sorted manner
+
+3. Post - Order
+Left ----> right -----> node
+--- used when deelete binary tree
+--- used bottom up calculations
+
+## most imp topic : DFS , BFS ##
+(I know already)
